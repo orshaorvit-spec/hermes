@@ -38,6 +38,7 @@ function App() {
     deleteTemplate
   } = useDocuments(projects);
 
+  const [activeView, setActiveView] = useState<'projects' | 'documents' | 'analytics' | 'projectBoard'>('projects');
   const [activeView, setActiveView] = useState<'projects' | 'documents' | 'analytics' | 'marketing' | 'projectBoard'>('projects');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
